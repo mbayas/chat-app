@@ -201,6 +201,5 @@ npm start
 ### Utils
 ```bash
 python faiss_explorer.py # Explore FAISS database
-python cleanup_projects.html # Cleanup projects
+cleanup_projects.html # Cleanup projects, open in browser
 ```
-
