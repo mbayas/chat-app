@@ -20,20 +20,15 @@ After installing the project, the directory structure will be as follows:
 ```
 chat-app/
 ├── README.md
-├── fix_metadata.py
 ├── cleanup_projects.html
 ├── faiss_explorer.py
 ├── backend/
 │   ├── app.py
 │   ├── config.py
 │   └── llm_service.py
-│
-├── frontend/
-│   ├── src/
-│   ├── public/
-│   ├── build/
-│   └── node_modules/
-└── db/
+└── frontend/
+    ├── src/
+    └── public/
 
 ```
 When running the project, the directory structure will be as follows:
