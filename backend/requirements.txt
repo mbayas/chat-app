@@ -1,0 +1,17 @@
+flask==2.3.3
+werkzeug==2.3.7
+flask-cors==3.0.10
+openai==1.65.1
+python-dotenv==1.0.0
+gunicorn==20.1.0
+requests==2.31.0
+google-generativeai==0.3.2
+faiss-cpu
+rich==13.9.4
+langchain==0.3.21
+langchain-community==0.3.20
+langchain-openai==0.3.10
+reportlab==4.3.1
+pillow==11.1.0
+markdown2
+typing-extensions==4.12.2

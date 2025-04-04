@@ -1,0 +1,8 @@
+# Product Backlog
+
+Producto backlog
+
+1. Poner api key en un archivo .env
+2. Documentar el codigo
+3. Subir a github
+4. Mejorar el manejo de parametros, especialmente relacionados al RAG por tipo de archivo   

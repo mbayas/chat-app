@@ -1,0 +1,23 @@
+# Directorio chat-app
+chats/
+db/
+docs/
+files/
+uploads/
+utils/
+
+# Directorio chat-app/backend
+backend/.DS_Store
+backend/__pycache__/
+backend/.env
+backend/chats/
+backend/flask.log
+backend/projects/
+backend/settings.json
+backend/uploads/
+
+# Directorio chat-app/frontend
+frontend/.DS_Store
+frontend/__pycache__/
+frontend/node_modules/
+frontend/build/
