@@ -1,21 +1,21 @@
 # Chat App
 
-Geppetto es una aplicación de chat desarrollada en React, Node.js, y Python.
-Permite a los usuarios interactuar con diferentes proveedores de LLM (OpenAI, Google, Ollama) y realizar projectos donde el usuario sube sus archivos y puede realizar consultas sobre los mismos utilzando RAG.
-Está orietado a personas que quieren interactuar con multiples modelos LLM y medir su comportanmiento en función de tiempo de respuesta, consumo de recursos y tokens utilizados.
+Geppetto is a chat application developed in React, Node.js, and Python.
+It allows users to interact with different LLM providers (OpenAI, Google, Ollama) and create projects where users can upload their files and make queries about them using RAG.
+It is oriented towards people who want to interact with multiple LLM models and measure their performance in terms of response time, resource consumption, and tokens used.
 
-## Requisitos
+## Requirements
 
 - Python 3.8+
 - Node.js 14+
 - npm o yarn
 
-## Estructura del Proyecto
+## Project Structure
 
-- `/frontend` - Aplicación React
-- `/backend` - Servidor Python
+- `/frontend` - React Application
+- `/backend` - Python Server
 
-Al instalar el proyecto, la estructura de directorios será la siguiente:
+After installing the project, the directory structure will be as follows:
 
 ```
 chat-app/
@@ -36,8 +36,7 @@ chat-app/
 └── db/
 
 ```
-
-Al ejecutar el proyecto, la estructura de directorios será la siguiente:
+When running the project, the directory structure will be as follows:
 
 
 ```
@@ -71,69 +70,70 @@ chat-app/
 ```
 
 
-## Descripción de la Estructura
+## Project Structure Description
 
-### Directorios Principales
+### Main Directories
 
-- `/backend`: Servidor Python Flask
-  - `app.py`: Aplicación principal
-  - `config.py`: Configuraciones
-  - `llm_service.py`: Servicio de LLM
-  - `uploads/`: Archivos temporales y PDFs generados
+- `/backend`: Python Flask Server
+  - `app.py`: Main application
+  - `config.py`: Configurations
+  - `llm_service.py`: LLM service
+  - `uploads/`: Temporary files and PDFs generated
 
-- `/frontend`: Aplicación React
-  - `src/`: Código fuente
-  - `public/`: Archivos estáticos
-  - `build/`: Compilación de producción
-  - `node_modules/`: Dependencias de Node.js
+- `/frontend`: React Application
+  - `src/`: Source code
+  - `public/`: Static files
+  - `build/`: Production build
+  - `node_modules/`: Node.js dependencies
 
-- `/db`: Base de datos FAISS
-  - Subdirectorios por proyecto con índices FAISS
+- 
+## Requirements
 
-- `/chats`: Historiales de chat
-  - Archivos JSON de conversaciones
-  - Archivos de metadatos
+Explanation of the main components:
+1. Web Framework:
+    - flask: The main web framework
+    - flask-cors: For handling CORS in requests
+2. LLM Providers:
+    - openai: Official OpenAI client
+    - google-generativeai: Official Google client for Gemini
+3. Document Processing and RAG:
+    - langchain: Framework for working with LLMs
+    - langchain-community: Community components for LangChain
+    - langchain-openai: OpenAI integrations
+  
+- `/db`: FAISS database
+  - Subdirectories by project with FAISS indices
 
-- `/docs`: Documentación del proyecto
-- `/utils`: Utilidades y herramientas
-- `/files` y `/uploads`: Almacenamiento de archivos
+- `/chats`: Chat history
+  - JSON files of conversations
+  - Metadata files
 
-### Archivos en la Raíz
+- `/docs`: Project documentation
+- `/utils`: Utilities and tools
+- `/files` and `/uploads`: File storage
 
-- `README.md`: Documentación principal
-- `.gitignore`: Configuración de Git
-- `fix_metadata.py`: Script de utilidad
-- `faiss_explorer.py`: Herramienta para FAISS
-- `cleanup_projects.html`: Utilidad de limpieza
+### Root Files
 
-## Requisitos
-
-Explicación de los componentes principales:
-1. Framework Web:
-    - flask: El framework web principal
-    - flask-cors: Para manejar CORS en las peticiones
-2. Proveedores de LLM:
-    - openai: Cliente oficial de OpenAI
-    - google-generativeai: Cliente oficial de Google para Gemini
-3. Procesamiento de Documentos y RAG:
-    - langchain: Framework para trabajar con LLMs
-    - langchain-community: Componentes comunitarios de LangChain
-    - langchain-openai: Integraciones específicas de OpenAI
-    - faiss-cpu: Para búsqueda de similitud vectorial
-    - pypdf: Para procesar archivos PDF
-4. Generación de PDFs y Markdown:
-    - reportlab: Para generar PDFs
-    - markdown2: Para convertir markdown a HTML
-5. Utilidades:
-    - python-magic: Para detección de tipos MIME
-    - requests: Para hacer peticiones HTTP
-    - typing-extensions: Para anotaciones de tipo
+- `README.md`: Main documentation
+- `.gitignore`: Git configuration
+- `fix_metadata.py`: Utility script
+- `faiss_explorer.py`: FAISS tool
+- `cleanup_projects.html`: Cleanup utility
+    - faiss-cpu: For vector similarity search
+    - pypdf: For processing PDF files
+4. PDF and Markdown Generation:
+    - reportlab: For generating PDFs
+    - markdown2: For converting markdown to HTML
+5. Utilities:
+    - python-magic: For MIME type detection
+    - requests: For HTTP requests
+    - typing-extensions: For type annotations
 
 
 
-## Dependencias
+## Dependencies
 
-### Paquetes Principales
+### Main Packages
 ```python
 # Framework Web
 flask==2.3.3
@@ -141,22 +141,22 @@ werkzeug==2.3.7
 flask-cors==3.0.10
 gunicorn==20.1.0
 
-# Proveedores de LLM
+# LLM Providers
 openai==1.65.1
 google-generativeai==0.3.2
 
-# LangChain y RAG
+# LangChain and RAG
 langchain==0.3.21
 langchain-community==0.3.20
 langchain-openai==0.3.10
 faiss-cpu
 
-# Generación de PDFs y Procesamiento de Imágenes
+# PDF and Image Processing
 reportlab==4.3.1
 pillow==11.1.0
 markdown2
 
-# Utilidades
+# Utilities
 python-dotenv==1.0.0
 python-magic==0.4.27
 requests==2.31.0
@@ -164,7 +164,7 @@ rich==13.9.4
 typing-extensions==4.12.2
 ```
 
-## Ejecución
+## Execution
 
 ### Backend
 ```bash
@@ -179,12 +179,12 @@ pip install -r requirements.txt
 cd frontend
 npm install
 ```
-## Configuración
+## Configuration
 
-1. Copia `.env.example` a `.env` en el directorio backend
-2. Configura tus claves API para Google y OpenAI en el archivo .env
+1. Copy `.env.example` to `.env` in the backend directory
+2. Configure your API keys for Google and OpenAI in the .env file
 
-## Ejecución
+## Execution
 
 ### Backend
 ```bash
@@ -197,4 +197,10 @@ python app.py
 cd frontend
 npm start
 ```
+
+### Utils
+```bash
+python faiss_explorer.py # Explore FAISS database
+python cleanup_projects.html # Cleanup projects
 ```
+
