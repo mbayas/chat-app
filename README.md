@@ -38,7 +38,6 @@ When running the project, the directory structure will be as follows:
 chat-app/
 ├── README.md
 ├── .DS_Store
-├── fix_metadata.py
 ├── cleanup_projects.html
 ├── faiss_explorer.py
 ├── backend/
