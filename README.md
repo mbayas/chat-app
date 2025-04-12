@@ -6,9 +6,20 @@ It is oriented towards people who want to interact with multiple LLM models and 
 
 ## Requirements
 
-- Python 3.8+
-- Node.js 14+
-- npm o yarn
+### Minimum Required Versions
+- Python 3.8+ (recommended 3.10+)
+- Node.js 16+ (recommended 18+ LTS)
+- npm 8+ or yarn 1.22+
+
+### Core Dependencies
+- React 18.2+
+- TypeScript 4.9+
+- Material-UI (MUI) 5.11+
+
+### Supported Browsers
+- Chrome (latest version)
+- Firefox (latest version)
+- Safari (latest version)
 
 ## Project Structure
 
