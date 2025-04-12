@@ -1,4 +1,4 @@
-# Chat App
+# Geppetto
 
 Geppetto is a chat application developed in React, Node.js, and Python.
 It allows users to interact with different LLM providers (OpenAI, Google, Ollama) and create projects where users can upload their files and make queries about them using RAG.
